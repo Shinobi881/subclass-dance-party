@@ -30,3 +30,7 @@ body, a:link, a:visited, a:active{
   border:0;
   max-width: 150px;
 }
+
+.spin{
+  animation: spin 4s linear infinite;
+}
