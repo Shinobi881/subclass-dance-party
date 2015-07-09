@@ -1,7 +1,7 @@
 var makeFlipDancer = function(top,left,time){
 	makeDancer.apply(this, arguments);
 
-	this.$node = $('<img src="src/images/flip.gif" id="backFlip" class="dancer noborder">');
+	this.$node = $('<img src="src/images/flip.gif"  class="dancer noborder spin">');
 	this.setPosition(top, left);
   this.step();
 }
@@ -15,8 +15,8 @@ makeFlipDancer.prototype.step = function(){
   //   animateTo:360
   // }, this.time);
 
-  console.log(this.$node)
-  makeDancer.prototype.step.call(this);
+  //console.log(this.$node)
+  //makeDancer.prototype.step.call(this);
 
   //this.$node.toggleClass("rotate", this.time);
  //this.$node.animate({opacity: 0.25}, 1000);
