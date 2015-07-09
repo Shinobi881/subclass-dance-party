@@ -4,6 +4,9 @@ var makeFlipDancer = function(top,left,time){
 	this.$node = $('<img src="src/images/flip.gif"  class="dancer noborder spin">');
 	this.setPosition(top, left);
   this.step();
+  this.$node.css({"-webkit-animation": "spin " + time/1000 + "s linear infinite",
+  "-moz-animation": "spin " + time/1000 + "s linear infinite",
+  "animation": "spin " + time/1000 + "s linear infinite" })
 }
 
 makeFlipDancer.prototype = Object.create(makeDancer.prototype);

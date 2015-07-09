@@ -32,12 +32,11 @@ body, a:link, a:visited, a:active{
 .dancer.noborder{
   border:0;
   max-width: 150px;
+  overflow: auto;
 }
 
 .spin{
-  -webkit-animation:spin 2s linear infinite;
-  -moz-animation:spin 2s linear infinite;
-  animation:spin 2s linear infinite;  
+
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }

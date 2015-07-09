@@ -31,21 +31,14 @@ $(document).ready(function(){
     $('body').append(dancer.$node);
   });
 
-$(".danceParty").on("click", function(){
-  //console.log(dancers);
-  for(var i=0;i<window.dancers.length;i++){
-    window.dancers[i].lineUp();
-    console.log($('.dancer')[i]);
-    
-  }
-});
-  
-  // $(".danceParty").on("click", function(event){
-  //   // console.log(dancers);
-  //   for(var i = 0; i < window.dancers.length){
-  //     dancers[i].lineUp();
-  //   }
+  $(".danceParty").on("click", function(){
+    for(var i=0;i<window.dancers.length;i++){
+      window.dancers[i].lineUp(Math.random()*10000);
 
-  // });
+      //$(dancers[i]).animate({left: 10 }, Math.random() * 1000);
+      
+    }
+  });
+  
 });
 

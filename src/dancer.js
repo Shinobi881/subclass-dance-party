@@ -35,7 +35,6 @@ makeDancer.prototype.step = function(){
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
-makeDancer.prototype.lineUp = function(){
-  console.log("RUNNING");
-  this.setPosition(top, 10);
+makeDancer.prototype.lineUp = function(time){
+  this.$node.animate({left:10},time);
 }
