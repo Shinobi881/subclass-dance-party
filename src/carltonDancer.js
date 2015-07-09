@@ -9,3 +9,8 @@ makeCarltonDancer.prototype = Object.create(makeDancer.prototype);
 makeCarltonDancer.prototype.constructor = makeCarltonDancer;
 
 makeCarltonDancer.prototype.step = function(){}; //no step animation because carlton has already achieved perfection.
+
+// makeCarltonDancer.prototype.lineUp = function(){
+//   console.log("RUNNING");
+//   //this.setPosition(top, 10);
+// }
