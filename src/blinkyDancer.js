@@ -1,13 +1,13 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps){
-  makeDancer.apply(this, arguments);
+var BlinkyDancer = function(top, left, timeBetweenSteps){
+  Dancer.apply(this, arguments);
   this.$node = $('<img class="dancer noborder" src="src/images/eye.gif">')
   this.setPosition(top, left);
 };
 
-makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
-makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
+BlinkyDancer.prototype = Object.create(Dancer.prototype);
+BlinkyDancer.prototype.constructor = BlinkyDancer;
 
-makeBlinkyDancer.prototype.step = function(){
-    makeDancer.prototype.step.call(this);
+BlinkyDancer.prototype.step = function(){
+    Dancer.prototype.step.call(this);
     this.$node.toggle();
 }

@@ -1,5 +1,5 @@
-var makeFlipDancer = function(top,left,time){
-	makeDancer.apply(this, arguments);
+var FlipDancer = function(top,left,time){
+	Dancer.apply(this, arguments);
 
   this.time = time;
 
@@ -8,10 +8,10 @@ var makeFlipDancer = function(top,left,time){
   this.step();
 }
 
-makeFlipDancer.prototype = Object.create(makeDancer.prototype);
-makeFlipDancer.prototype.constructor = makeFlipDancer;
+FlipDancer.prototype = Object.create(Dancer.prototype);
+FlipDancer.prototype.constructor = FlipDancer;
 
-makeFlipDancer.prototype.step = function(){  
+FlipDancer.prototype.step = function(){  
   this.$node.css({"-webkit-animation": "spin " + this.time/1000 + "s linear infinite",
   "-moz-animation": "spin " + this.time/1000 + "s linear infinite",
   "animation": "spin " + this.time/1000 + "s linear infinite" })
