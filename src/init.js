@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  //rotation();
   window.dancers = [];
 
   $(".addDancerButton").on("click", function(event){

@@ -28,4 +28,5 @@ body, a:link, a:visited, a:active{
 
 .dancer.noborder{
   border:0;
+  max-width: 150px;
 }
