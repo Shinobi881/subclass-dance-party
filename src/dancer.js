@@ -38,3 +38,7 @@ makeDancer.prototype.step = function(){
 makeDancer.prototype.lineUp = function(time){
   this.$node.animate({left:10},time);
 }
+
+makeDancer.prototype.shuffle = function(top, left, time){
+  this.$node.animate({left: left, top: top,},time);
+};
